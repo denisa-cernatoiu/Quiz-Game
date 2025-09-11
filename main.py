@@ -24,6 +24,3 @@ for i in question_data:
 
 quiz = QuizBrain(question_bank)
 quiz_ui = QuizUI(quiz)
-
-print("You have completed the quiz.")
-print(f"Final score: {quiz.score}/{len(question_bank)}!")
