@@ -19,12 +19,11 @@ class QuizUI():
         self.score = Label(text="Score: 0", font=("Arial", 12, "bold"), bg=THEME_COLOR, fg="white", highlightthickness=0)
         self.score.grid(column=1, row=0)
         self.score.config(padx=20, pady=20)
-
-        self.correct = PhotoImage(file="quiz_game/images/true.png")
+        self.correct = PhotoImage(file="images/true.png")
         self.correct_button = Button(image=self.correct, highlightthickness=0, command=self.correct_q)
         self.correct_button.grid(column=0, row=2, pady=20)
 
-        self.wrong = PhotoImage(file="quiz_game/images/false.png")
+        self.wrong = PhotoImage(file="images/false.png")
         self.wrong_button = Button(image=self.wrong, highlightthickness=0, command=self.false_q)
         self.wrong_button.grid(column=1, row=2)
 
